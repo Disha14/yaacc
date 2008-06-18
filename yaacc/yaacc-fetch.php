@@ -4,9 +4,10 @@ Filename: 		yaacc-fetch.php
 Date: 			2007-08-05
 Copyright: 		Kenji Baheux
 Author: 		Kenji Baheux
-Version:        1.0
+Version:        1.1
 Last modified:  2008-06-12
 Changelog:
+1.1: division by zero bug when invalid response (invalid currency...)
 1.0: code cleaning, added cache optimization with computation of reverse rate
 0.9.3: fixed bug, added version, referer check
 0.9:   Initial release
@@ -191,7 +192,7 @@ function getReverseResponse($rate_response)
     $reverse_response = '';
     $pattern = '/(.*<conversion-rate>)((\.[0-9]+)|([0-9]+(\.[0-9]*)?))(<\/conversion-rate>.*)/is';
     $matched = preg_match($pattern, $rate_response, $matches);
-    if ($matched)
+    if ($matched && $matches[2] > 0.0)
     {
         $reverse_response = $matches[1] . 1.0 / floatval($matches[2]) . $matches[6];
     }    

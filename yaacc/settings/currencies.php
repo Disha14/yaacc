@@ -192,7 +192,7 @@ function dummyForI18n()
     __("€","yaacc"); //Euro Member Countries, Euro
     __("£", "yaacc"); //United Kingdom, Pounds
     __("¥","yaacc"); //Japan, Yen
-    __("$","yaacc"); //United States of America, Dollars
+    __("USD","yaacc"); //United States of America, Dollars
 }
 
 

@@ -3,7 +3,8 @@
 Plugin Name: YAACC
 Plugin URI: http://www.commecadujapon.com/entries/20070805-convertisseur-de-devises-widget-wordpress.html
 Description: Yet Another AJAX Currency Converter
-Version: 1.0
+Version: 1.1
+Changelog: 1.1 fixed img path 
 Author: Kenji Baheux
 Author URI: http://www.commecadujapon.com
 */
@@ -85,7 +86,7 @@ function widget_yaacc_init() {
 		<div id="yaacc">
         <form>
         <fieldset class="yaacc-fieldset">
-        <legend class="yaacc-legend"><span id="ajax-working"><img src="<?php echo get_option('siteurl'); ?>/wp-content/plugins/yaacc/money.png" width="32" height="32" alt="currency converter" /></span></legend>
+        <legend class="yaacc-legend"><span id="ajax-working"><img src="<?php echo get_option('siteurl'); ?>/wp-content/plugins/yaacc/assets/money.png" width="32" height="32" alt="currency converter" /></span></legend>
         <input class="yaacc-textfield" id="free-units-from" size="10" type="text" onkeyup="updateFreeUnitsFrom();" value="<?php echo($options['defaultAmount']); ?>"/>
         <select class="yaacc-selectfield" id="from-currency" onchange="getConversionRate();" <?php if (count($currency_list) <=2) { echo("style=\"display:none\""); } ?>>
         <?php 

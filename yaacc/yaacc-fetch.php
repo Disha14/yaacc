@@ -1,4 +1,5 @@
 <?php
+header("Content-type: text/xml");
 /*
 Filename: 		yaacc-fetch.php
 Date: 			2007-08-05
@@ -30,12 +31,9 @@ Description: 	PHP Back-end to fetch and cache currency conversion rates.
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-
-
 // Exit if parameters are not specified
 if((!isset($_GET['from']) || '' == $_GET['from']) || (!isset($_GET['to']) || '' == $_GET['to']))
 {
-    header("Content-type: text/xml");
     echo("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
     ?>
     <response>
@@ -235,7 +233,7 @@ function getConversionRate($from, $to)
     }
     else
     {
-        $cache_contents = "<response>\n<conversion-rate>0.0</conversion-rate>\n<date>:-(</date>\n</response>";
+        $cache_contents = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<response>\n<conversion-rate>0.0</conversion-rate>\n<date>:-(</date>\n</response>";
     }
 
     return $cache_contents;
@@ -246,12 +244,12 @@ $to = substr($_GET['to'],0,3);
 // If from and to are the same then don't bother calling the remote web service
 if (strcmp($from, $to) == 0)
 {
-    $response = "<response>\n<conversion-rate>1.0</conversion-rate>\n<date>:-D</date>\n</response>";
+    $response = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<response>\n<conversion-rate>1.0</conversion-rate>\n<date>:-D</date>\n</response>";
 }
 else
 {
     $response = getConversionRate($from, $to);
 }
-header("Content-type: text/xml");
+
 echo($response);
 ?>

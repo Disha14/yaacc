@@ -4,7 +4,7 @@ Donate link: http://www.commecadujapon.com/
 Tags: currency,converter,rate,exchange,ajax,widget,e-commerce
 Requires at least: 2.0.2
 Tested up to: 2.5.1
-Stable tag: 1.0.2
+Stable tag: 1.1
 
 A currency converter widget for WordPress.
 

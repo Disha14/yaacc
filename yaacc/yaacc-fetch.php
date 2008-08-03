@@ -49,7 +49,7 @@ if((!isset($_GET['from']) || '' == $_GET['from']) || (!isset($_GET['to']) || '' 
 $cache_conversion = dirname(__FILE__) . "/conversions/";
 $cache_tolerance = 60*60*24;
 $webServiceURL = "http://www.commecadujapon.com/php/conversion-rate.php";
-define ('YAACC_VERSION', "1.0");
+define ('YAACC_VERSION', "1.1");
 
 // Last resort function
 // Source : http://www.php-mysql-tutorial.com/php-tutorial/php-read-remote-file.php

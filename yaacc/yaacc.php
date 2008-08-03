@@ -26,7 +26,7 @@ Author URI: http://www.commecadujapon.com
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-define ('YAACC_VERSION', "1.0");
+define ('YAACC_VERSION', "1.1");
 define ('YAACC_OPTIONS', 'widget_yaacc');
 if  (!defined('PLUGINDIR'))
 {

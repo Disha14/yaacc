@@ -1,3 +1,5 @@
+20080804
+1.1: fixed img path, removed unnecessary cache files
 20080612
 1.0: advanced caching, code cleaning, separation of currencies settings, cleaner directory structure, localisation with standard api
 20080518

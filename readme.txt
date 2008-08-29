@@ -25,7 +25,7 @@ Fresh install:
 
 1. Open the currencies.php file under 'yaacc/settings/' in a text editor and comment the currencies you don't need (by adding // at the beginning of the line) and uncomment the currencies you need (by removing the '//'). Save the file.
 
-2. Upload the whole 'yaacc' directory to the `/wp-content/plugins/` directory. Make sure that the conversions directory is writable.
+2. Upload the whole 'yaacc' directory to the `/wp-content/plugins/` directory. Important: Make sure that you have a 'conversions' directory under 'yaacc' and that it is writable.
 
 3. Activate the plugin through the 'Plugins' menu in WordPress
 

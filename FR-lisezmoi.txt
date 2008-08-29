@@ -7,7 +7,7 @@ License : GPL
 
 *** Installation ***
 
-1. Copiez le répertoire 'yaacc' (inutile de copier optional-other-languages) dans le répertoire de plugins* de votre blog WordPress avec un logiciel FTP.
+1. Copiez le répertoire 'yaacc' dans le répertoire de plugins* de votre blog WordPress avec un logiciel FTP. Vérifiez qu'il y a bien un répertoire conversions sous yaacc.
 2. Loggez vous dans l'interface d'administration de votre blog WordPress.
 3. Allez dans la section plugins.
 4. Activez le plugin YAACC.

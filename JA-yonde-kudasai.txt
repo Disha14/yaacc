@@ -7,7 +7,7 @@ License : GPL
 
 *** インストールの手順 ***
 
-１．'YAACC'をFTPでWordPressのPlugins*フォルダーにコピーして
+１．'YAACC'をFTPでWordPressのPlugins*フォルダーにコピーして（yaaccの下にconversionというフォルダーがあるのを確認してくだださい）
 ２．アドミンパネルにログインして
 ３．Pluginsのセクションに移動して
 ４．yaaccを有効化にして

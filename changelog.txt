@@ -1,3 +1,5 @@
+20080829
+1.1: added a dummy file in the conversion sub-directory to force its inclusion into the archive file on wordpress.org
 20080804
 1.1: fixed img path, removed unnecessary cache files
 20080612

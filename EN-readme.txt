@@ -7,8 +7,9 @@ License : GPL
 
 *** How to Install ***
 
-1. Copy the 'yaacc' (optional-other-languages folder is not needed) folder into your WordPress plugins* folder
-   with your favorite FTP program.
+1. Copy the 'yaacc' folder into your WordPress plugins* folder
+   with your favorite FTP program. Make sure that there is a conversions folder
+   under yaacc.
 2. Login to your WordPress admin interface.
 3. Go to the plugins section.
 4. Activate the YAACC plugin.

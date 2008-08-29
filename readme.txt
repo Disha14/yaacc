@@ -4,7 +4,7 @@ Donate link: http://www.commecadujapon.com/
 Tags: currency,converter,rate,exchange,ajax,widget,e-commerce
 Requires at least: 2.0.2
 Tested up to: 2.5.1
-Stable tag: 1.1
+Stable tag: 1.1.1
 
 A currency converter widget for WordPress.
 
@@ -38,6 +38,9 @@ Fresh install:
 
 = How often are the conversion rate updated? =
 The conversion rates are updated every 24 hours.
+
+= The widget is not working and the spinning ball animation does not stop =
+Make sure that you have a writable 'conversions' directory under 'yaacc'.
 
 == Screenshots ==
 
